@@ -1,0 +1,850 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;600;700&family=Noto+Sans:wght@100;200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+.borders{
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+}
+.hbox{
+    border: 0px solid red;
+    width: 100%;
+    background-color: #27374D;
+    margin-bottom: 10px;
+}
+body{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+}
+.hbox h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    padding-top:10px;
+    background-color: #27374D;
+    text-shadow: 0px 0px 30px whitesmoke;
+}
+.hbox h2{
+    margin-top: 0px;
+    font-size: 40px;
+    color:#FF334A;
+    margin-left: 25px;
+    text-shadow: 1px 2px 15px pink;
+    margin-bottom: 18px;
+}
+.ldiv{
+    height: 100%;
+    width:339px;
+    border-style: solid;
+    background-color: #F4F1F1;
+    float: left;
+    border:0;
+
+}
+.vrdiv{
+    height: 100%;
+    width: 10px;
+    border-style: solid;
+    float: left;
+    background-color: white;
+    border:0;
+}
+.mrdiv{
+    width:75%;
+    min-width: 680px;
+    border: 0px solid red;
+    float: left;
+}
+.rdiv{
+    display: none;
+}
+
+@keyframes exp {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* animations for Trackboxes */
+@keyframes tba1 {
+    from{
+        width: 20%;
+    }
+    to{
+        width: 45%;
+    }
+}
+@keyframes tba2 {
+    from{
+        width: 30%;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes trhsize {
+    from
+    {
+        font-size: 5px;
+    }
+    to{
+
+    }
+}
+
+#admin_name{
+    font-weight: 600;
+    text-shadow: 0px 0px 1px black ;
+    text-align: center;
+    font-size: 18px;
+}
+.rdiv h1{
+    margin-left: 30px;
+}
+
+.rdiv1{
+    display: block;
+}
+.crdiv{
+    height: 75%;
+    width: 100%;
+    min-width: 680px;
+    border-style:solid;
+    background-color: #FEF9F9;
+    border: 0px;
+    float: left;
+    box-shadow: 0px 0px 7px 1px #FEDADA  ;
+    animation-name: exp;
+    animation-duration: 0.5s;
+}
+.rdiv1 h1{
+    margin-left: 30px;
+}
+.rdiv2{
+    height: 75%;
+    width: 30%;
+    border-style:solid;
+    background-color: #FEF9F9;
+    border: 0px;
+    float: left;
+    box-shadow: 0px 0px 7px 1px #FEDADA  ;
+    display: block;
+}
+.rdiv2 p {
+ 
+}
+
+
+.rdiv2-h-p{
+    font-weight: 600;
+    text-align: center;
+    background-color: #3c1053;
+    color: whitesmoke;
+    height: 30px;
+    margin-bottom: 3px;
+    padding-top: 10px;
+}
+.rtnxsdiv{
+    height: 83%;
+    border: 0px solid red;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+.rtnxsdiv table{
+    border: 0px black solid;
+    width: 100%;
+}
+.rtnxsdiv table th{
+    background-color: #27374D;
+  
+
+}
+.rtnxsdiv table tr{
+    height: 20px;
+}
+.rtnxsdiv table tr td {
+    background-color: none;
+    width: 50%;
+    text-align: center; 
+    border: 1px solid #3c1053; 
+
+
+}
+.rtnxsdiv table tr th p {
+    height: 30px;
+    color: white;
+    margin: 0px;
+    padding: 6px 0px 0px 0px;
+
+}
+.rtnxsdiv table tr td p {
+    height: 25px;
+}
+
+.rdiv3{
+
+    display: none;
+
+}
+.invenbspace{
+    margin-left: 5px;
+}
+.mleft10{
+    margin-left: 30px
+}
+.invoptns{
+    border:0px black solid;
+   margin-top: 15px;
+    margin-left: 1%;
+    float: left;
+    max-width: 600px;
+}
+.invoptns h1{
+    font-size: 15px;
+}
+.invoptns button{
+    height: 40px;
+    width: 100px;
+    font-size: 10px;
+    font-weight: 600px;
+}
+.invoptns hr{
+    width: 70%;
+}
+.invbtnsdiv{
+    float:right;
+    border: 0px solid red;
+}
+.invtextdiv{
+    float: left;
+    border: 0px solid red;
+}
+.invtextdiv p{
+    margin-top: 10px;
+}
+/* table disigns */
+#table-headings{
+    background-color: #27374D;
+    border-radius: 5px;
+    color: white;
+    font-family: 'calibri';
+    font-size: 13px;
+    padding: 8px;
+}
+
+
+.invtable{
+    border:0px solid red;
+    height: 450px;
+    clear: both;
+}
+.invtable h1{
+    font-size: 15px;
+}
+/* Rdiv 4 */
+.rdiv4{
+    display: none;
+}
+.ctypetext{
+    height: 40px;
+    width: 230px;
+    border: 1px solid red;
+    margin: 20px;
+    padding-left: 10px;
+    font-family: 'Cabin',sans-serif;
+    background-color: transparent;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+}
+.ctypenumber{
+    height: 40px;
+    width: 230px;
+    border: 1px solid red;
+    margin: 20px;
+    padding-left: 10px;
+    font-family: 'Cabin',sans-serif;
+    background-color: transparent;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+}
+.ctypeselect{
+    height: 40px;
+    width: 230px;
+    border: 1px solid red;
+    margin: 20px;
+    padding-left: 10px;
+    font-family: 'Cabin',sans-serif;
+    background-color: transparent;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px; 
+}
+.ctypetext2{
+    height: 30px;
+    margin-left: 20px;
+    border: 0px;
+    background-color: white;
+    border-radius: 15px;
+    color:black;
+    font-weight: 600;
+    padding-left: 10px;
+    font-family: 'Cabin',sans-serif;
+}
+.ctypebutton2{
+    background-color:whitesmoke;
+    color: black;
+    font-weight: 600 ;
+    font-size: 10px;
+    border:0px solid;
+    border-radius: 40px;
+    width:100px;
+    height: 29px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+.ctypebutton2:hover{
+    box-shadow: 0px 0px 5px 1px white;
+}
+.addinvenform input[type='text']{
+    height: 40px;
+    width: 230px;
+    border: 1px solid red;
+    margin: 20px;
+    padding-left: 10px;
+    font-family: 'Cabin',sans-serif;
+    background-color: transparent;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+
+}
+.addinvenform select{
+    height: 40px;
+    width: 230px;
+    border: 1px solid red;
+    margin: 20px;
+    padding-left: 10px;
+    font-family: 'Cabin',sans-serif;
+    background-color: transparent;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+
+}
+.addinvenform  input[type="number"]{
+    height: 40px;
+    width: 230px;
+    border: 1px solid red;
+    margin: 20px;
+    padding-left: 10px;
+    font-family: 'Cabin',sans-serif;
+    background-color: transparent;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+}
+.rdiv4 h1{
+    margin-left: 25px;
+}
+
+.addinvenform input[type='submit']{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.addinvenform{
+    border: 0px solid red;
+    height: auto;
+    max-width: 290px;
+    margin-left: 3%;
+
+}
+.rldiv4{
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+.rrdiv4{
+    float: right;
+    width: 55%;
+    border:0px solid red;
+    height: 100%;    
+}
+.rldiv4 iframe{
+    border: 0px solid red;
+    width: 100%;
+    height: 100%;
+}
+.rrdiv4 iframe{
+    width: 97%;
+    height: 100%;
+    border: 0px solid red;
+    background-color: #FEF9F9;
+
+}
+.rdiv5{
+    display: none;
+
+}
+/* Rdiv 4 Completed Here */
+/* Rdiv6 starts Here */
+.rdiv6{
+    display: none;
+    height:74% ;
+}
+.nonediv{
+    display: none;
+}
+.rdiv6-hdiv{
+    height: 70px;
+    width: 100%;
+    border: 0px solid red;
+
+}
+.rdiv6-hdiv-ldiv{
+    float: left;
+    border: 0px solid red;
+
+}
+.rdiv6-hdiv-rdiv{
+    float: left;
+    width: 50%;
+    border: 0px solid red;
+    margin-left: 30px;
+    margin-top:20px
+    
+}
+.rdiv6-pagediv1{
+    height: 100%;
+    width: 100%;
+    border: 0px solid red;
+}
+.rdiv6-pagediv1-ldiv{
+    height: 100%;
+    width: 40%;
+    border:0px red solid;
+    float: left;
+}
+.rdiv6-pagediv1-rdiv{
+    height: 100%;
+    width: 59%;
+    border: 0px red solid;
+    float: right;
+}
+
+.rdiv11{
+    display: none;
+}
+/* Rdiv 6 Ends Here */
+
+/* Rdiv 7 Starts Here */
+.rdiv7{
+    display: none;
+}
+.rdiv7-hdiv{
+    height: 70px;
+    width: 100%;
+    border: 0px solid red;
+}
+.rdiv7-hdiv-ldiv{
+    float: left;
+    width: 70%;
+    border: 0px solid red;
+}
+.rdiv7-hdiv-rdiv{
+    float: left;
+    width: 70%;
+    border: 0px solid red;
+    margin-left: 30px;
+    margin-top:20px
+}
+.rdiv7-framediv{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+.rdiv7-framediv iframe{
+    height: 100%;
+    width: 100%;
+}
+.rdiv7-hdiv-rdiv p{
+    font-size: 10px;
+}
+
+/* Rdiv 7 Ends Here */
+
+/* Rdiv 8 Starts Here */
+.rdiv8{
+    display: none;
+}
+.rdiv8-hdiv-ldiv{
+    float: left;
+    border: 0px red solid;
+}
+.rdiv8-hdiv-rdiv{
+    float: right;
+    border: 0px red solid;
+}
+/* Rdiv 8 ends Here */
+/* Rdiv 9 Starts Here */
+.rdiv9{
+    display: none;
+}
+/* Rdiv 10 Starts Here */
+.rdiv10{
+    display: none;
+}
+.bdiv{
+    height: 0px;
+    width: 100%;
+    clear: both;
+    border: 0px red;
+    border-style: solid;
+    
+
+}
+
+.prodiv{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    border: 0;
+    border-style: solid;
+}
+.welrow1{
+    border: 0px solid red;
+    height: 150px;
+
+}
+.datatables_filter input[TYPE="search"]{
+    margin-bottom: 10px;
+}
+/* Trackbox Starts Here */
+.trackbox{
+    height: 100px;
+    border: 0px solid red;
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 10px; 
+    transition-duration: 0.5s;
+    float: left;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.trackbox h2{
+    margin:10px 10px 10px 10px;
+    font-size: 18px;
+    animation-name: trhsize;
+    animation-duration: 0.5s;
+}
+.trackbox p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    text-align: right;
+    text-shadow: 0px 1px 15px pink;
+    transition-duration: 0.5s;
+}
+.trackbox p:hover{
+    font-size: 27px;
+    text-shadow: 0px 1px 15px lightpink;   
+}
+/* theme for tbox 1 */
+.tbox1{
+    background: #ff416c;
+    background: -webkit-linear-gradient(to right, #ff416c, #ff4b2b);
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    box-shadow:  0px 0px 10px 1px  lightpink;
+    animation-name: tba1;
+    animation-duration: 1s;
+    transition-duration: 0.5s;
+    width: 45%;
+}
+.tbox1:hover{
+    background: #ED213A;  
+background: -webkit-linear-gradient(to right, #93291E, #ED213A); 
+background: linear-gradient(to right, #93291E, #ED213A);
+
+}
+
+/* theme for tbox2 */
+.tbox2{
+    background: #eacda3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    box-shadow:  0px 0px 10px 1px  lightpink;
+    width: 45%;
+    animation-name: tba1;
+    animation-duration: 0.5s;
+}
+.tbox2:hover{
+    background: #ad5389;
+background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+background: linear-gradient(to right, #3c1053, #ad5389); 
+
+}
+.tbox3{
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height: 50px;
+    margin-top: 30px;
+    float: none;
+    width: 80% ;
+    border-radius: 100px;
+    animation-name: tba2;
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+}
+
+
+.tbox4{
+    height: 198px;
+    background: #ff7e5f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.tboxr2{
+    height: 240px;
+}
+.welrow1-col1{
+    border:0px solid red;
+    height: 240px;
+    width: 50%;
+    float: left;
+}
+.welrow1-col1 h2{
+    animation-name: trhsize;
+    animation-delay:0.2s;
+    animation-duration: 0.5s;
+}
+.weldiv{
+    border: 0px red solid;
+    height: 87px;
+
+}
+.lweldiv{
+    border:0px red solid;
+    width: 50%;
+    float: left;
+    height: 87px;
+}
+.rweldiv{
+    width: 150px;
+    border:0px red solid;
+    float: right;
+    height: 50px;
+    margin-top:15px;
+    cursor:pointer;
+}
+.rweldivl{
+    float: left;
+}
+.rweldivr{
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.rweldiv p{
+    font-weight: 600;
+    margin-left: 10px;
+
+}
+.rweldiv{
+    background-color: lavender;
+}
+.rweldiv:hover{
+    background-color: pink;
+}
+.rweldiv:active{
+    background-color: palevioletred
+}
+ /* Custom button starts here */
+ .cbtndiv{
+    border: 0px solid red;
+    margin-left: 10px;
+    background-color: darkslategray;
+    height: 450px;
+}
+.cbtndiv p {
+    color: wheat;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+.cbutton1{
+    height: 45px;
+    width: 100%;
+    border: 0px;
+    border-style: solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+   
+}
+.cbutton1 button{
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border: 0;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.cbutton1 button:hover{
+    background-color: whitesmoke; 
+    color: black;
+    box-shadow: 0px 0px 5px 1px white;
+}
+.cbutton1 button:active{
+    background-color: white;
+    box-shadow: 0px 0px 21px 1px white;
+}
+/* custom button ends Here */
+/* Services div starts here */
+.serdiv{
+    border: 0px solid red;
+    height: 400px;
+}
+
+.serdivr1{
+    border: 0px solid red;
+    height: 190px ;
+    margin-bottom: 15px;
+}
+/* custom service button starts here */
+
+
+.cserbtn{
+    height: 190px;
+    width: 140px;
+    border: 0px red solid;  
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 3px red;
+    transition-duration: 0.5s;
+    float: left;
+    font-family: 'Signika Negative', sans-serif;
+    cursor: pointer;
+}
+.cserbtn:hover{
+    box-shadow: 0px 0px 7px red;
+
+}
+.cserbtn:active{
+    box-shadow: 0px 0px 30px lightseagreen;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cserbtn h4{
+    margin: 0px;
+    text-align: center;
+}
+.cserbtn p{
+    margin-top: 5px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.cserimg{
+    margin: auto;
+    height: 110px;
+    width: 90px;
+    margin-top: 15px;
+    border: 0px red solid;
+}
+
+/* Custom service button ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+.anfadein{
+    animation: infade 1s;
+}
+.adelay{
+    animation-delay: 0.3s;
+}
+@keyframes infade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.asize{
+    animation: asizek 2s;
+}
+@keyframes asizek {
+    form{
+        font-size: 40;
+    }
+    to{
+        font-size:45;
+    }
+}
+.nsize{
+    animation: nsizek 2s;
+}
+@keyframes nsizek {
+    form{
+        font-size: 45;
+    }
+    to{
+        font-size:40;
+    }
+}
+
+@media only screen and (max-width: 1460px) {
+    .rdiv2{
+        width: 27%;
+    }
+    .rdiv1{
+        width: 70%;
+    }
+    .rdiv{
+        width: 70%;
+    }
+    .ldiv{
+        width: 24%;
+    }
+    .vrdiv{
+    width: 5px;
+    }
+  }
+  @media only screen and (max-width: 1275px) {
+    .rdiv2{
+        display: none;
+    }
+    .rdiv1{
+        width: 100%;
+    }
+    .rdiv{
+        width: 100%;
+    }
+    .ldiv{
+        width: 24%;
+    }
+    .crdiv{
+        width: 100%;
+    }
+    .vrdiv{
+    width: 5px;
+    }
+  }

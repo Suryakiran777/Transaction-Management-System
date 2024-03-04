@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widths=device-width, initial-scale=1.0">
+    <title>Stats</title>
+    <link rel="stylesheet" href="stats.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;600;700&family=Noto+Sans:wght@100;200;300;400;500;600;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+body{
+   background-color: white;
+   font-family: 'Cabin', sans-serif;
+}
+
+.stats_body{
+    height: 90vh;
+    width: 90vh;
+    background-color: #F4FAFF  ;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    /* backdrop-filter: blur(2px);
+    filter: blur(8px); */
+    /* -webkit-filter: blur(2px); */
+    box-shadow: 0px 0px 10px 1px #8AA7C6  ;
+}
+
+.stat_row1{
+    height: 40px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px 1px grey;
+    padding:3px;
+}
+.stat_optn_btn{
+    height: 35px;
+    color: white;
+    min-width: 60px;
+    font-family: 'Cabin', sans-serif;
+    border: 1px solid transparent;
+    background-color: #4EA761 ;
+    border-radius: 0px 10px 0px 10px;
+    transition-duration: 0.3s;
+}
+.stat_optn_btn:focus{
+    cursor: pointer;
+    height: 35px;
+    color: greenyellow;
+    font-family: 'Cabin', sans-serif;
+    border: 1px solid transparent;
+    background-color: white ;
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 0px 0px 5px 1px;
+}
+
+.stat_optn_btn:hover{
+    cursor: pointer;
+    height: 35px;
+    color: orange;
+    font-family: 'Cabin', sans-serif;
+    border: 1px solid transparent;
+    background-color: white ;
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 0px 0px 5px 1px;
+}
+
+
+.stat_row2{
+    display: flex;
+    margin-top: 10px;
+    min-height: 300px;
+}
+.stat_row2_col1{
+    width: 45%;
+    margin-right: 2px;
+}
+.stat_row2_col2{
+    width: 45%;
+    margin-left: 2px;
+}
+
+.stats_col_borders{
+    border: 1px solid grey;
+}
+
+.stat_row3{
+    display: flex;
+    margin-top: 10px;
+    min-height: 300px;
+}
+.stat_row3_col1{
+    width: 45%;
+    margin-right: 2px;
+}
+.stat_row3_col2{
+    width: 45%;
+    margin-left: 2px;
+}
+
+
+.stats_body h3{
+    margin-left: 15px;
+    background-color: white;
+    height: 40px;
+    text-align: left;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left :5px;
+    vertical-align: middle;
+}
+.stats_body hr{
+    margin:0;
+}
+
+.borders{
+    border: 1px solid tra;
+}
+
+    </style>
+</head>
+<body>
+    <div class="stats_body borders">
+        <script>
+            function go_back_a_panel(){
+                window.location.replace('/admin_panel')
+            }
+        </script>
+        <button onclick="go_back_a_panel()" style=" border-radius:30px 0px 0px 30px;background-color: red; margin-bottom:5px" class="stat_optn_btn">Back</button>
+        <div class="stat_row1 borders">
+            <label for="">Select Option :   </label>
+            <button class="stat_optn_btn">Overall</button>
+            <button class="stat_optn_btn">Emp1</button>
+            <button class="stat_optn_btn">Emp2</button>
+        </div>
+
+        <div class="stat_row2 borders">
+            <div class="stat_row2_col1 stats_col_borders ">
+                <h3>Employee Performance</h3>
+                <img style="height: 85%;width:100%;" src="{{url_for('static',filename='/images/stats/stat1.jpg')}}" alt="">
+                <hr>
+            </div>
+            <div class="stat_row2_col2 stats_col_borders">
+                <h3>Sales  in Last Three Months</h3>
+                <img style="height: 85%;width:100%;" src="{{url_for('static',filename='/images/stats/stat2.jpg')}}" alt="">
+                <hr>
+            </div>
+        </div>
+        <div class="stat_row3 borders">
+            <div class="stat_row3_col1 stats_col_borders ">
+                <h3>Top 5 customers</h3><hr>
+                <img style="height: 85%;width:100%;" src="{{url_for('static',filename='/images/stats/stat3.jpg')}}" alt="">
+            </div>
+            <div class="stat_row3_col2 stats_col_borders">
+                <h3>Transaction Count by Invoice Amount</h3>
+                <img style="height: 85%;width:100%;" src="{{url_for('static',filename='/images/stats/stat4.jpg')}}" alt="">
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

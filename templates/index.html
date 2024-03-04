@@ -1,0 +1,74 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMS</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='hello/main.css')}}">
+    <script type="text/javascript" src="{{url_for('static',filename='js/st1.js')}}"></script>
+</head>
+
+<body>
+    <table border="1">
+        {% for row in data %}
+        <tr>
+            <td>{{row['item_name']}}</td>
+            <td>{{row['cost']}}</td>
+           
+        </tr>
+        {% endfor %}
+    </table>
+    <div style="height:600px ;position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;" class="mbox" id="cwidth">
+
+        <div class="ibox">
+            <img src="{{url_for('static',filename='images/3882227.png')}}" alt="" height="150px" width="150px">
+            <h1>EASE TRANSACT</h1>
+        </div>
+        <div class="sbox" id="sgndiv">
+            <h1 class="fade-in">Welcome</h1>
+            <h3>Signin</h3>
+            <div class="bbox">
+                <button class="cbutton" onclick="sw()">Admin</button>
+                <button class="cbutton" onclick="sw1()">User</button>
+            </div>
+        </div>
+        <div class="sbox1 " id="sgndiv1">
+            <img src="{{url_for('static',filename='images/gback1.png')}}" height="60px" onclick="adback()">
+            <h1>Admin Login</h1>
+            <form action="/admin_login" method="POST">
+                <div class="ppdiv">
+                    <img src="{{url_for('static',filename='images/profilepic1.png')}}" height="150px" width="150px">
+                </div>
+                <input type="text" name="Admin_name" class="tboxes" placeholder="Username"><br>
+                <input type="password" name="Admin_pass" class="tboxes" placeholder="Password">
+                <div class="btndiv">
+                    <input type="submit" class="cbutton"  value="Sign in">
+                </div>
+            </form>
+        </div>
+
+        <div class="sbox2" id="sgndiv2">
+            <img src="{{url_for('static',filename='images/gback1.png')}}" height="60px" onclick="usback()">
+            <h1>User Login</h1>
+            <form action="/user_login" method="POST">
+                <div class="ppdiv">
+                    <img src="{{url_for('static',filename='images/profilepic.png')}}" height="150px" width="150px">
+                </div>
+                <input type="text" name="User_name" class="tboxes" id="uname1" placeholder="Username"><br>
+                <input type="password" name="User_pass" class="tboxes" id="pass1" placeholder="Password">
+                <div class="btndiv">
+                    <input class="cbutton" type="submit" name="usignin" value="Sign In">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

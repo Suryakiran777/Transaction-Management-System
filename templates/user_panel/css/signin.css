@@ -1,0 +1,84 @@
+body{
+    font-family: 'calibri';
+    background-image: url('images/backgroundsignin.jpg');
+    background-size: cover;
+}
+.borders{
+    border: 1px;
+    border-color: red;
+    border-style: solid;
+}
+
+.containerdiv{
+    height: auto;
+    width: 450px;
+    border-radius: 10px;
+    background-color: #F3F1F0   ;
+    margin: auto;
+    opacity: 85%;
+    margin-top:5%;
+    position: relative;
+    
+}
+.signindiv{
+    height: 100%;
+    width: 95%;
+    border-color: blue;
+    padding-left: 2px;
+    padding-top: 10px;
+    margin: auto;
+
+}
+.profilediv{
+    height: 150px;
+    width: 150px;
+    margin-left: 30%;
+    background-image: url('images/profilepic.png');
+    background-size: cover;
+    position: absolute;
+}
+.formsectiondiv{
+    background-color: white;
+    margin-top: 80px;
+    border-radius: 7px;
+    border-color: transparent;
+    border-style: solid;
+}
+.usernamediv{
+    height: 90px;
+    margin-top: 80px;
+    padding-left: 10px;
+}
+.passworddiv{
+    height:90px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+.rememberdiv{
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.btndiv{
+    height: 45px;
+    width: 40%;
+    margin-top: 30px;
+    padding-left: 10px;
+    margin-left: 230px;
+}
+.signupdiv{
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+
+}
+
+#sbtbtn{
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    background-color: orange;
+    border: 0px;
+    border-radius: 7px;
+
+}

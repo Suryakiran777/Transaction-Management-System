@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/apanel.css">
+    <script src="../js/ad_p.js" type="text/javascript"></script>
+    <style>
+        body{
+            background-image: none;
+        }
+        .tablediv{
+            width: auto;
+            border: 0px solid red;
+        }
+        .tablediv table tr th{
+            height: 30px ;
+            background-color: #27374D;
+            color: white;
+            font-size: 13px;
+        }
+        .tablediv table tr td{
+            height: 30px ;
+            text-align: center;
+            font-size: 13px;
+            background-color: whitesmoke;
+            
+        }
+        .del_btn{
+            border: 0px solid red;
+            background-color: lightcoral;
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+        }
+        .del_btn:hover{
+            box-shadow: 0px 0px 10px 1px black;
+        }
+        .cust_qty{
+            width: 10%;
+            background-color: transparent;
+            border:0px solid ;
+        }
+    </style>
+</head>
+<body>
+    <div class="tablediv">
+        <table width="100%" border="0" >
+            <tr>
+                <th>No</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Tax</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+           
+            
+            {% for row in data %}
+            <tr>
+                <form action="/user_panel/pro_inv/remove" method="POST">
+                <td>{{row['invoice_id']}}</td>
+                <td>{{row['item_name']}}</td>
+                <td><input readonly class="cust_qty" type="text" name="r_qty" id="" value="{{row['i_qty']}}"></td>
+                <td>{{row['i_tax']}}</td>
+                <td>{{row['i_price']}}</td>
+                <td><button class="del_btn" name="delbtn1" value="{{row['item_name']}}"></button><td>
+            </form>
+            </tr>
+            
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
